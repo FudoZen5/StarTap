@@ -27,6 +27,10 @@ public class GameController : MonoBehaviour
     void Update()
     {
         OnTracking(track.TrackSuccess);
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     public void AddScore(int value)
